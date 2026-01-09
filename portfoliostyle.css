@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(46, 2, 86);
+    font-family: 'Century Gothic', sans-serif;
+    color:rgb(214, 223, 225);
+}
+.header {
+    background-color: rgb(46, 2, 86);
+    color: rgb(214, 223, 225);
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.card {
+    color: rgb(214, 223, 225);
+    margin: 20px;
+    border-radius: 5px;
+    border: rgb(52, 6, 94) 0.05px solid;
+    box-shadow: rgb(85, 34, 132) 4px 4px 8px 0px;
+    max-width: 450px; 
+    padding: 40px;
+}    
+.card .uppstick {
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(214, 223, 225);
+}
+h1 {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0;
+}
+h2 {
+    font-size: 35px;
+    font-weight: normal;
+}
+h3 {
+    font-size: 28px;
+    font-weight: normal;
+} 
+.navigation {
+    display: flex; /* makes the navigation bar a flexbox container */
+    flex-direction: row; /* makes the navigation bar a horizontal flexbox container */
+    justify-content: space-around; /* spaces the links evenly in the navigation bar */
+    width: 100%; /* makes the navigation bar take up the full width of the content container */
+    padding: 0px; /* removes default padding from the navigation bar */
+}
+    .navigation a {
+        flex: 1; /* makes each link take up equal space in the navigation bar */
+        background-color: #000000;
+        color: white;
+        font-size: larger;
+        text-decoration: none;
+        text-align: center;
+        padding: 14px 20px;
+    }
+        /* Change color on hover */
+        .navigation a:hover {
+            background-color: #c1f1ea;
+            color: #000000; /* changes the background color and text color on hover */
+        }
+i {
+    font-size: 25px;
+    color: rgb(214, 223, 225);
+}
+.contact a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+}
+.footer {
+    background-color: rgb(214, 223, 225);
+    text-align: center;
+    font-size: larger;
+    padding: 10px;
+    color: rgb(46, 2, 86);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+} 
+/* RESPONSIV DESIGN FÖR SKÄRM STÖRRE ÄN 768 PX */
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .title {
+        font-size: 50px;
+        align-items: flex-start;
+    }
+    .menu {
+        text-align: left;
+        font-size: 24px;
+    }
+    .content {
+        flex-direction: row;
+    }
+    .card {
+        flex: 1;
+    }
+}
+/* RESPONSIV DESIGN FÖR SKÄRM STÖRRE ÄN 1024 PX */
+@media (min-width: 1024px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .title {
+        text-align: left;
+        font-size: 60px;
+        align-items: flex-start;
+    }
+    .menu {
+        font-size: 36px;
+    }
+    .content {
+        max-width: 1000px;
+        margin: 0 auto;
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card {
+        flex: 1;
+        margin: 10px;
+    }
+}
